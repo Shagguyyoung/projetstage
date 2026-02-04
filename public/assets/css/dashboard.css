@@ -1,0 +1,19 @@
+/* Style scrollbar pour tout le site */
+::-webkit-scrollbar {
+    width: 12px;               /* largeur */
+}
+
+::-webkit-scrollbar-track {
+    background: #E4B4D1;       /* couleur de fond */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c76da5; /* couleur du "pouce" */
+    border-radius: 10px;
+    border: 3px solid #E4B4D1; /* espace autour du pouce */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #501d3d; /* couleur au survol */
+}
