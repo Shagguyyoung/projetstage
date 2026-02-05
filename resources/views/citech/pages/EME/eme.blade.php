@@ -4,57 +4,50 @@
 
 @section('content')
 
-<section>
-    <div class="container">
-        <div class="rectangle">
-            <a href="Emepsa">EME Comportemental</a>
+<section class="w-full min-h-screen flex items-center justify-center py-12 md:py-16 lg:py-20 px-4">
+    <div class="w-full max-w-4xl mx-auto space-y-4 md:space-y-6">
+        
+        <!-- EME Comportemental -->
+        <div class="w-full">
+            <a href="Emepsa" 
+               class="block w-full h-16 md:h-20 bg-[#f24c21] border-2 border-black rounded-2xl flex items-center justify-center text-white text-lg md:text-xl lg:text-2xl font-extrabold hover:text-gray-400 transition-colors duration-500 transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
+                EME Comportemental
+            </a>
         </div>
-        <div class="rectangle">
-            <a href="eme_generaliste">EME Complexité</a>
+
+        <!-- EME Complexité -->
+        <div class="w-full">
+            <a href="eme_generaliste" 
+               class="block w-full h-16 md:h-20 bg-[#f24c21] border-2 border-black rounded-2xl flex items-center justify-center text-white text-lg md:text-xl lg:text-2xl font-extrabold hover:text-gray-400 transition-colors duration-500 transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
+                EME Complexité
+            </a>
         </div>
-        <div class="rectangle">
-            <a href="eme_logistique">EME Logistique</a>
+
+        <!-- EME Logistique -->
+        <div class="w-full">
+            <a href="eme_logistique" 
+               class="block w-full h-16 md:h-20 bg-[#f24c21] border-2 border-black rounded-2xl flex items-center justify-center text-white text-lg md:text-xl lg:text-2xl font-extrabold hover:text-gray-400 transition-colors duration-500 transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
+                EME Logistique
+            </a>
         </div>
-        <div class="rectangle">
-            <a href="eme_finance">EME Finance</a>
+
+        <!-- EME Finance -->
+        <div class="w-full">
+            <a href="eme_finance" 
+               class="block w-full h-16 md:h-20 bg-[#f24c21] border-2 border-black rounded-2xl flex items-center justify-center text-white text-lg md:text-xl lg:text-2xl font-extrabold hover:text-gray-400 transition-colors duration-500 transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
+                EME Finance
+            </a>
         </div>
-        <div class="rectangle">
-            <a href="eme_data">EME Data</a>
+
+        <!-- EME Data -->
+        <div class="w-full">
+            <a href="eme_data" 
+               class="block w-full h-16 md:h-20 bg-[#f24c21] border-2 border-black rounded-2xl flex items-center justify-center text-white text-lg md:text-xl lg:text-2xl font-extrabold hover:text-gray-400 transition-colors duration-500 transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
+                EME Data
+            </a>
         </div>
+
     </div>
 </section>
 
-<style>
-    .container
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 70px;
-    }
-
-    .rectangle
-    {
-        
-        width: 100%;
-        height: 60px;
-        margin: 8px;
-        background-color: #f24c21;
-        border: solid black;
-        border-radius: 20px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 800;
-        color: #fff;
-    }
-
-    a:hover
-    {
-        color: gray;
-        transition: ease-in 0.5s;
-    }
-</style>
- 
 @endsection

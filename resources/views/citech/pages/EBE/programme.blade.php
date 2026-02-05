@@ -4,215 +4,121 @@
 
 @section('content')
 
-<section>
-<div class="contain">
-        <div class="log">
-            <div class="text1 text-center">
-                <span class="text-center;" style="color: #fff;">S'inscrire</span>
+<section class="w-full">
+    
+    <!-- Header Section -->
+    <div class="w-full lg:w-[88%] mx-auto mt-5 md:mt-8 lg:mt-10 px-4 lg:px-0">
+        <div class="bg-[#f24c21] flex flex-col md:flex-row items-center justify-center gap-4 p-6 md:p-8 rounded-lg">
+            
+            <div class="w-full md:w-auto max-w-md">
+                <div class="border border-white bg-transparent text-white text-center py-3 px-6 rounded hover:text-gray-400 transition-colors duration-500 cursor-pointer">
+                    <span class="text-base md:text-lg font-medium">S'inscrire</span>
+                </div>
             </div>
-             <div class="text2 text-center">
-         <a href="inscription_finance" class="color">
-            BACHELOR 3 FINANCE 
-            <br>
-            ANALYSTE FINANCIER
-         </a> <br>      
-     </div>
+            
+            <div class="w-full md:w-auto max-w-md">
+                <div class="border border-white bg-[#2f353e] text-white text-center py-3 px-6 rounded hover:text-gray-400 transition-colors duration-500 cursor-pointer">
+                    <a href="inscription_finance" class="block text-base md:text-lg font-medium">
+                        BACHELOR 3 FINANCE
+                        <br>
+                        ANALYSTE FINANCIER
+                    </a>
+                </div>
+            </div>
+            
         </div>
-       
-</div>
+    </div>
 
-
-     <!-- info-cadre -->
-      <div class="bg-row">
-      <div class="row_4">
-        <p><a href="programme">Programmme</a></p>
-      </div>
-      <div class="row_4">
-        <p><a href="equipe_pedagogique">L'Equipe pédagogique</a> </p>
-      </div>
-       <div class="row_4">
-          <p><a href="conditions">Conditions</a></p>
+    <!-- Navigation Cards -->
+    <div class="w-full flex justify-center mt-6 md:mt-8 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 max-w-6xl w-full">
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-3 rounded hover:text-[#f24c21] transition-colors duration-500 cursor-pointer">
+                <p>
+                    <a href="programme" class="text-sm md:text-base">Programme</a>
+                </p>
+            </div>
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-3 rounded hover:text-[#f24c21] transition-colors duration-500 cursor-pointer">
+                <p>
+                    <a href="equipe_pedagogique" class="text-sm md:text-base">L'Équipe pédagogique</a>
+                </p>
+            </div>
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-3 rounded hover:text-[#f24c21] transition-colors duration-500 cursor-pointer">
+                <p>
+                    <a href="conditions" class="text-sm md:text-base">Conditions</a>
+                </p>
+            </div>
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-3 rounded hover:text-[#f24c21] transition-colors duration-500 cursor-pointer">
+                <p>
+                    <a href="modalites" class="text-sm md:text-base">Modalités</a>
+                </p>
+            </div>
+            
         </div>
-        <div class="row_4">
-           <p><a href="modalites">Modalités</a></p>
+    </div>
+
+    <!-- Main Content Card -->
+    <div class="w-full lg:w-[88%] mx-auto mt-6 md:mt-8 mb-8 border-4 border-[#f24c21] p-4 md:p-6 lg:p-8 rounded-lg">
+        
+        <h1 class="text-[#686D76] text-xl md:text-2xl lg:text-3xl font-bold mb-4">
+            <u>Programme du <strong>BACHELOR 3 FINANCE</strong> - Analyste financier (9 mois)</u>
+        </h1>
+        
+        <h2 class="text-[#686D76] text-lg md:text-xl lg:text-2xl italic mb-6 md:mb-8">
+            sous la Direction du Professeur Abdoulaye OUATTARA
+        </h2>
+        
+        <div class="space-y-6 md:space-y-8 text-justify">
+            
+            <div class="text-[#686D76]">
+                <span class="text-lg md:text-xl font-arial block">
+                    <strong>Module 1</strong> : Notions de base de la comptabilité
+                </span>
+            </div>
+            
+            <div class="text-[#686D76]">
+                <span class="text-lg md:text-xl font-arial block">
+                    <strong>Module 2</strong> : Maîtriser l'environnement comptable et financier
+                </span>
+            </div>
+            
+            <div class="text-[#686D76]">
+                <span class="text-lg md:text-xl font-arial block">
+                    <strong>Module 3</strong> : Analyser les équilibres financiers
+                </span>
+            </div>
+            
+            <div class="text-[#686D76]">
+                <span class="text-lg md:text-xl font-arial block">
+                    <strong>Module 4</strong> : Évaluer l'activité et la profitabilité
+                </span>
+            </div>
+            
+            <div class="text-[#686D76]">
+                <span class="text-lg md:text-xl font-arial block">
+                    <strong>Module 5</strong> : Faire un diagnostic financier
+                </span>
+            </div>
+            
+            <div class="text-[#686D76]">
+                <span class="text-lg md:text-xl font-arial block">
+                    <strong>Module 6</strong> : Pratique écrite de l'anglais
+                </span>
+            </div>
+            
+            <div class="text-[#686D76]">
+                <span class="text-lg md:text-xl font-arial block">
+                    <strong>Module 7</strong> : Projet
+                </span>
+            </div>
+            
         </div>
-     </div>
-
-      <!-- **********grand cadre******* -->
-
-     <div class="cadre">
-           <h1 style=" color: #686D76; font-size: 25px;"><u>Programme du <strong>BACHELOR 3 FINANCE</strong> - Analyste financier ( 9 mois ) </u>
-           </h1> <br>
-           <h1 style="color: #686D76; font-size: 24px; font-style: italic;">sous la Direction du Professeur Abdoulaye OUATTARA</h1>
-             <br>
-             <br>
-           <p class="list" style="text-align: justify;">
-           <span style="font-size: 20px; font-family: Arial;">
-            <strong>Module 1</strong>
-                    : Notions de base de la comptabilité 
-           </span>
-           <br>
-           <br>
-           <span style="font-size: 20px; font-family: Arial;">
-            <strong>Module 2</strong>
-                    : Maîtriser l’environnement comptable et financier
-           </span>
-           <br>
-           <br>
-           <span style="font-size: 20px; font-family: Arial;">
-            <strong>Module 3</strong>
-                     : Analyser les équilibres financiers
-           </span>
-           <br>
-           <br>
-           <span style="font-size: 20px; font-family: Arial;">
-            <strong>Module 4</strong>
-                     : Evaluer l’activité et la profitabilité
-           </span>
-           <br>
-           <br>
-           <span style="font-size: 20px; font-family: Arial;">
-            <strong>Module 5</strong>
-                    : Faire un diagnostic financier
-           </span>
-           <br>
-           <br>
-           <span style="font-size: 20px; font-family: Arial;">
-            <strong>Module 6</strong>
-                     : Pratique écrite de l’anglais
-           </span>
-           <br>
-           <br>
-           <span style="font-size: 20px; font-family: Arial;">
-            <strong>Module 7</strong>
-                  : Projet
-           </span>
-           </p>
-      </div>
+        
+    </div>
 
 </section>
 
-<!-- ********CSS STYLE********** -->
- <style>
-    /* header */
-    .contain
-    {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 88%;
-        padding-top: 3px;
-        height: 150px;
-        margin-top: 20px;
-        margin-left: 100px;
-        background-color: #f24c21;
-    }
-
-    .text1 
-    {
-       
-        width: 400px;
-        padding: 5px;
-        margin: 15px;
-        border: 1px solid white;
-        font-weight: 500;
-        background-color: transparent;
-    }
-
-    .text2
-    {
-        justify-content: center;
-        align-items: center;
-        font-weight: 500;
-        width: 400px;
-        padding: 5px;
-        margin: 15px;
-        border: 1px solid #fff;
-        color: whitesmoke;
-        background-color: #2f353e;
-    }
-    
-.text1 span:hover
-{
-    color: gray;
-    transition: ease-in 0.5s;
-}   
-
-.text2:hover
-{
-    color: gray;
-    transition: ease-in 0.5s;
-}
-
-/* info-cadre */
-
-.row_4
-    {
-        width: 268px;
-        height: 50px;
-        padding-top: 10px;
-        margin-left: 25px;
-        margin-top: 10px;
-        text-align: center;
-        color: #fff;
-        font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        margin-right: 20px;
-        background-color: #2f353e;
-    }
-    
-
-    .row_4 a
-    {
-        font-size: 0.9rem;
-    }
-
-    .row_4 a:hover
-    {
-        color: #f24c21;
-        transition: ease-in 0.5s;
-    }
-
-    .bg-row 
-    {
-        width: 100%;
-        display: flex;
-        margin-left: 10px;
-        justify-content: center;
-    }
-
-     /* -------grand cadre----- */
-
-    .cadre 
-{
-    margin-left: 90px;
-    height: 80%;
-    width: 88%;
-    margin-top: 15px;
-    margin-bottom: 0;
-    border: 4px solid #f24c21;
-    padding: 9px;
-    opacity: 1;
-}
-
-.cadre h1
-{
-
-    text-align: start;
-    opacity: 1;
-    font-size: 2rem;
-    font-family: arial, helvetica, sans-serif; 
-    font-weight: bolder;
-    font-size: x-large;
-    padding-right: 20px;
-}
-
-span
-{
-    font-style: medium;
-    font-size: 0.8rem;
-    font-family: arial, helvetica, sans-serif;
-    color: #686D76;
-}
-
- </style>
+@endsection

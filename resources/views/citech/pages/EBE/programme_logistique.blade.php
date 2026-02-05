@@ -4,172 +4,75 @@
 
 @section('content')
 
-<section>
-<div class="contain">
-        <div class="log">
-            <div class="text1 text-center">
-                <span class="text-center;" style="color: #fff;">S'inscrire</span>
-            </div>
-             <div class="text2 text-center">
-         <a href="inscription_logistique" class="color">
-            BACHELOR 3 LOGISTIQUE 
-            <br>
-            RESPONSABLE LOGISTIQUE
-         </a> <br>      
-     </div>
-        </div>
-       
-</div>
-
-
-     <!-- info-cadre -->
-      <div class="bg-row">
-      <div class="row_4">
-        <p><a href="programme_logistique">Programmme</a></p>
-      </div>
-      <div class="row_4">
-        <p><a href="equipe_logistique">L'Equipe pédagogique</a> </p>
-      </div>
-       <div class="row_4">
-          <p><a href="conditions_logistique">Conditions</a></p>
-        </div>
-        <div class="row_4">
-           <p><a href="modalites_logistique">Modalités</a></p>
-        </div>
-     </div>
-
-      <!-- **********grand cadre******* -->
-
-     <div class="cadre">
-           <h1 style=" color: #686D76; font-size: 20px;"><u>Programme du Bachelor3 Responsable Logistique</u> 
-           </h1>
-           <br>
-           <h1 style="color: #686D76; font-size: 18px;"><u>Sous la Direction du Pr Gérard BAGLIN</u></h1>
-             <br>
+<section class="w-full">
+    
+    <!-- Header Section -->
+    <div class="w-full lg:w-[85%] mx-auto mt-5 md:mt-8 lg:mt-10 px-4 lg:px-0">
+        <div class="bg-[#f24c21] flex flex-col md:flex-row items-center justify-center gap-4 p-6 md:p-8 rounded-lg">
             
-      </div>
+            <div class="w-full md:w-auto max-w-md">
+                <div class="border border-white bg-transparent text-white text-center py-3 px-6 rounded hover:text-gray-400 transition-colors duration-500 cursor-pointer">
+                    <span class="text-base md:text-lg font-medium">S'inscrire</span>
+                </div>
+            </div>
+            
+            <div class="w-full md:w-auto max-w-md">
+                <div class="border border-white bg-[#2f353e] text-white text-center py-3 px-6 rounded hover:text-gray-400 transition-colors duration-500 cursor-pointer">
+                    <a href="inscription_logistique" class="block text-base md:text-lg font-medium">
+                        BACHELOR 3 LOGISTIQUE
+                        <br>
+                        RESPONSABLE LOGISTIQUE
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Navigation Cards -->
+    <div class="w-full flex justify-center mt-6 md:mt-8 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 max-w-6xl w-full">
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-3 rounded hover:text-[#f24c21] transition-colors duration-500 cursor-pointer">
+                <p>
+                    <a href="programme_logistique" class="text-sm md:text-base">Programme</a>
+                </p>
+            </div>
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-3 rounded hover:text-[#f24c21] transition-colors duration-500 cursor-pointer">
+                <p>
+                    <a href="equipe_logistique" class="text-sm md:text-base">L'Équipe pédagogique</a>
+                </p>
+            </div>
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-3 rounded hover:text-[#f24c21] transition-colors duration-500 cursor-pointer">
+                <p>
+                    <a href="conditions_logistique" class="text-sm md:text-base">Conditions</a>
+                </p>
+            </div>
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-3 rounded hover:text-[#f24c21] transition-colors duration-500 cursor-pointer">
+                <p>
+                    <a href="modalites_logistique" class="text-sm md:text-base">Modalités</a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Main Content Card -->
+    <div class="w-full lg:w-[85%] mx-auto mt-6 md:mt-8 mb-8 border-4 border-[#f24c21] p-6 md:p-8 lg:p-10 rounded-lg">
+        
+        <h1 class="text-[#686D76] text-lg md:text-xl lg:text-2xl font-bold mb-4 md:mb-6">
+            <u>Programme du Bachelor 3 Responsable Logistique</u>
+        </h1>
+        
+        <h2 class="text-[#686D76] text-base md:text-lg lg:text-xl">
+            <u>Sous la Direction du Pr Gérard BAGLIN</u>
+        </h2>
+        
+    </div>
 
 </section>
 
-<!-- ********CSS STYLE********** -->
- <style>
-    /* header */
-    .contain
-    {
-
-        display: flex;
-        justify-content: center;
-        width: 85%;
-        padding-top: 3px;
-        height: 140px;
-        margin-top: 20px;
-        margin-left: 100px;
-        background-color: #f24c21;
-    }
-
-    .text1 
-    {
-        justify-content: center;
-        align-items: center;
-        width: 400px;
-        padding: 5px;
-        margin: 15px;
-        border: 1px solid white;
-        font-weight: 500;
-        background-color: transparent;
-    }
-
-    .text2
-    {
-        justify-content: center;
-        align-items: center;
-        font-weight: 500;
-        width: 400px;
-        padding: 5px;
-        margin: 15px;
-        border: 1px solid #fff;
-        color: whitesmoke;
-        background-color: #2f353e;
-    }
-    
-.text1 span:hover
-{
-    color: gray;
-    transition: ease-in 0.5s;
-}   
-
-.text2:hover
-{
-    color: gray;
-    transition: ease-in 0.5s;
-}
-
-/* info-cadre */
-
-.row_4
-    {
-        width: 20%;
-        height: 50px;
-        padding-top: 10px;
-        margin-top: 10px;
-        text-align: center;
-        color: #fff;
-        font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        margin-right: 20px;
-        background-color: #2f353e;
-    }
-
-    .row_4 a
-    {
-        font-size: 0.9rem;
-    }
-
-    .row_4 a:hover
-    {
-        color: #f24c21;
-        transition: ease-in 0.5s;
-    }
-
-    .bg-row 
-    {
-        width: 100%;
-        display: flex;
-        margin-left: 6px;
-        justify-content: center;
-    }
-
-     /* -------grand cadre----- */
-
-    .cadre 
-{
-    margin-left: 90px;
-    height: 29%;
-    width: 85%;
-    margin-top: 15px;
-    margin-bottom: 0;
-    border: 4px solid #f24c21;
-    padding: 9px;
-    opacity: 1;
-}
-
-.cadre h1
-{
-
-    text-align: start;
-    opacity: 1;
-    font-size: 1.1rem;
-    font-family: arial, helvetica, sans-serif; 
-    font-weight: bolder;
-    font-size: x-large;
-    padding-right: 20px;
-}
-
-span
-{
-    font-style: medium;
-    font-size: 0.8rem;
-    font-family: arial, helvetica, sans-serif;
-    color: #686D76;
-}
-
- </style>
+@endsection

@@ -4,446 +4,254 @@
 
 @section('content')
 
-<section>
+<section class="w-full">
    
-<!-- main-head -->
-     <div id="main">
-        <div class="box_1">
-          <div class="Espace">
-            <div class="espace_2">
-                <b>Espace Auditeurs</b>
+    <!-- Main Header Section -->
+    <div class="w-full lg:w-[85%] mx-auto mt-5 md:mt-8 lg:mt-10 px-4 lg:px-0">
+        <div class="bg-[#f24c21] flex flex-col lg:flex-row items-start lg:items-stretch gap-4 p-4 md:p-6 rounded-lg">
+            
+            <!-- Box 1 - Espace Auditeurs -->
+            <div class="w-full lg:w-auto flex-shrink-0">
+                <div class="space-y-3">
+                    <div class="text-black text-lg md:text-xl font-bold mb-4">
+                        Espace Auditeurs
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <label for="identifiant_2" class="block text-white text-sm md:text-base">
+                            Identifiant
+                        </label>
+                        <input type="text" 
+                               name="identifiant_2" 
+                               id="identifiant_2" 
+                               class="w-full md:w-40 px-3 py-2 rounded-md border-2 border-white focus:outline-none focus:ring-2 focus:ring-white"
+                               required>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <label for="password_2" class="block text-white text-sm md:text-base">
+                            Mot de passe
+                        </label>
+                        <input type="password" 
+                               name="mot_de_passe" 
+                               id="password_2" 
+                               class="w-full md:w-40 px-3 py-2 rounded-md border-2 border-white focus:outline-none focus:ring-2 focus:ring-white"
+                               required>
+                    </div>
+                    
+                    <div class="text-white text-xs md:text-sm font-bold">
+                        <p class="text-center">
+                            Mot de passe oublié? 
+                            <a href="#" class="hover:text-gray-300 transition-colors duration-300 underline">
+                                Cliquez ici
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-3">
-                <label for="name" id="name">Identifiant</label>
-                <input type="text" name="identifiant_2" id="identifiant_2" required>
-           </div>
-            <div class="col-3">
-                <label for="name" id="password">Mot de passe</label>
-                <input type="password" name="mot de passe" id="password_2" required>
-            </div>
-            <div class="white">
-                 <p class="text-center">Mot de passe oublié?<a href="#">Cliquez ici</a></p>
-            </div>
-            </div>
-        </div>
-        <div class="Bouton">
-            <div class="bouton">
-                <button type="submit">
-                  <img class="w-[80%]" src="{{ asset('assets/upload/img/button-1.png') }}" alt="">
+
+            <!-- Button -->
+            <div class="w-full lg:w-auto flex items-center justify-center lg:justify-start mt-4 lg:mt-0">
+                <button type="submit" 
+                        class="bg-transparent border-none rounded-full hover:scale-105 transition-transform duration-300 cursor-pointer">
+                    <img class="w-16 h-16 md:w-20 md:h-20" 
+                         src="{{ asset('assets/upload/img/button-1.png') }}" 
+                         alt="Connexion">
                 </button>
             </div>
-         </div>
-        <div class="box_2">
-                <iframe width="240" height="220" src="https://www.youtube.com/embed/JUtx6sfELTo" title="ismparis  base FB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            
+            <!-- Box 2 - Video -->
+            <div class="w-full lg:flex-1 flex items-center justify-center">
+                <div class="w-full max-w-md lg:max-w-none">
+                    <iframe class="w-full aspect-video rounded-lg shadow-lg" 
+                            src="https://www.youtube.com/embed/JUtx6sfELTo" 
+                            title="ismparis base FB" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            
+            <!-- Box 3 - Inscription Buttons -->
+            <div class="w-full lg:w-auto space-y-4 mt-4 lg:mt-8">
+                <div class="border border-white bg-transparent text-white text-center p-3 rounded hover:text-gray-300 transition-colors duration-500 cursor-pointer">
+                    <p class="font-bold">
+                        <a href="#">S'inscrire</a>
+                    </p>
+                </div>
                 
-                </iframe>
+                <div class="border border-white bg-[#2f353e] text-white text-center p-3 rounded hover:text-gray-400 transition-colors duration-500 cursor-pointer">
+                    <p>
+                        <a href="inscription_finance">
+                            BACHELOR 3 FINANCE<br>
+                            Analyste Financier
+                        </a>
+                    </p>
+                </div>
+            </div>
             
         </div>
-        <div class="box_3">
-            <div class="row_2 text-center">
-                <p><a href="#">S'inscrire</a></p>
+    </div>
+
+    <!-- Info Navigation Cards -->
+    <div class="w-full flex justify-center mt-6 md:mt-8 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 max-w-6xl w-full">
+            <div class="bg-[#2f353e] text-white text-center py-4 px-2 rounded border-4 border-[#2f353e] hover:text-[#f24c21] transition-colors duration-500">
+                <p>
+                    <a href="programme" class="text-sm md:text-base">Programme</a>
+                </p>
             </div>
-            <div class="row_3 text-center">
-                <P><a href="inscription_finance">BACHELOR 3 FINANCE
-                     Analyste Financier</a></P>
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-2 rounded border-4 border-[#2f353e] hover:text-[#f24c21] transition-colors duration-500">
+                <p>
+                    <a href="equipe_pedagogique" class="text-sm md:text-base">L'Équipe pédagogique</a>
+                </p>
+            </div>
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-2 rounded border-4 border-[#2f353e] hover:text-[#f24c21] transition-colors duration-500">
+                <p>
+                    <a href="conditions" class="text-sm md:text-base">Conditions</a>
+                </p>
+            </div>
+            
+            <div class="bg-[#2f353e] text-white text-center py-4 px-2 rounded border-4 border-[#2f353e] hover:text-[#f24c21] transition-colors duration-500">
+                <p>
+                    <a href="#" class="text-sm md:text-base">Modalités</a>
+                </p>
             </div>
         </div>
-     </div>
+    </div>
 
-     <!-- info-cadre -->
-      <div class="bg-row">
-      <div class="row_4">
-        <p><a href="programme">Programmme</a></p>
-      </div>
-      <div class="row_4">
-        <p><a href="equipe_pedagogique">L'Equipe pédagogique</a> </p>
-      </div>
-       <div class="row_4">
-          <p><a href="conditions">Conditions</a></p>
-        </div>
-        <div class="row_4">
-           <p><a href="#">Modalités</a></p>
-        </div>
-     </div>
-
-     <!-- **********grand cadre******* -->
-
-     <div class="cadre">
-           <h1 style=" color: #686D76;">Analyste financier, une compétence recherchée !
-           </h1> <br>
-           <span>Qu’entendons-nous par analyste financier ? 
-            Le diagnostic financier d'une entreprise peut être rapproché du bilan de santé établi en médecine pour un être humain.
-             Il permet d'identifier les symptômes et de mettre en œuvre une thérapeutique adaptée. 
-             Le diagnostic financier s'appuyant sur les performances de l'entreprise propose les mesures à prendre pour assurer sa survie, 
-             son redressement et son développement par une nouvelle stratégie</span>
-             <br>
-             <br>
-           
-           <span>En définitive cette compétence est utile autant à l'actionnaire qui se préoccupe de la rentabilité des fonds investis et de l'indépendance de l'entreprise, 
-            qu'au banquier qui se préoccupe aussi de rentabilité (aptitude de l'entreprise à rémunérer les fonds empruntés) et de sécurité (aptitude de l'entreprise à rembourser ces mêmes fonds)</span>
-            <br>
-            <br>
-           <span>L'analyste financier est un collaborateur indispensable dans les services comptables ou financiers, chez les opérateurs de services crédits chez les banquiers ou encore chez les équipes de contrôles de gestion.
-             Il est en quelque sorte la vigie de l’entreprise ou du financeur.</span>
-             <br>
-             <br>
-             <span>Comme pour toutes nos formations, le format pédagogique autorise de se former tout en poursuivant ses activités professionnelles ou autres, 
-                et est orienté vers l’acquisition de véritables compétences pour l’excellence par le savoir-faire</span>
-                <br>
-                <span></span>
-                <br>
-                <span>Docteur Annick ATSAIN</span>
-                <br>
-                <span>Directrice Général</span>
-                <br>
-                <br>
+    <!-- Main Content Card -->
+    <div class="w-full lg:w-[86%] mx-auto mt-6 md:mt-8 mb-8 border-4 border-[#f24c21] p-4 md:p-6 lg:p-8 rounded-lg">
+        <h1 class="text-[#686D76] text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6">
+            Analyste financier, une compétence recherchée !
+        </h1>
         
-                 <h1 style=" color: #686D76">Le Bachelor 3 FINANCE - Analyste financier</h1>
-                 
-                 <span>Ce Bachelor est dirigé par le Doyen honoraire Abdoulaye OUATTARA, 
-                    Professeur à l’Université Félix Houphouët Boigny et grand spécialiste des sciences de gestion.
-                </span>
-                <br>
-                <span>Il a deux objectifs principaux. Le premier est de mettre l’apprenant en capacité d’élaborer et de mettre en œuvre une démarche de diagnostic économique et financier.
-                     Le second est de le rendre capable de rédiger un rapport de diagnostic complet et 
-                     clair de la santé économique et financière d’une entreprise donnée.
-                </span>
-                <br>
-                <span>Aborder rationnellement le diagnostic financier suppose de répondre à un certain nombre de questions préalables concernant sa définition, ses finalités, ses outils et ses méthodes. Comme la plupart des disciplines scientifiques le diagnostic financier passera par une phase d'observation,
-                     puis de compréhension et enfin d'interprétation.
-                </span>
-                <br>
-                <span>Grâce à nos accords avec un grand nombre d’établissements d’enseignement supérieur en Europe comme sur le Continent Africain, 
-                    nous mettons à disposition des salles de regroupement pour nos auditeurs dans un grand nombre de pays.
-                </span>
-                <br>
-                <span>Ce Bachelor de spécialisation ou de réorientation est directement accessible aux titulaires d’un Bac+2. La formation dure 9 mois au cours desquels vous alternerez les séances de travail individuel et les séminaires collectifs. En fonction de votre pays de résidence, CAF vous proposera plusieurs centres de séminaires
-                     (sous réserve d'un nombre suffisant d’admis ayant choisi ces centres et des places disponibles).
-                </span>
-                <br>
-                <br>
-                <h1 style="color:#686D76;">Les modalités d'inscription</h1>
-                <span></span>
-                <br>
-                <span>Pour vous inscrire, vous devez être titulaire au moins d’un Bac+2 (si ce n’est pas le cas,
-                     vous pouvez nous soumettre une demande de validation des acquis professionnels dite VAP).
-                </span>
-                <br>
-                <span>Si vous êtes intéressé(e) cliquez sous « S'inscrire »</span>
+        <div class="space-y-4 text-[#686D76] text-sm md:text-base leading-relaxed">
+            <p>
+                Qu'entendons-nous par analyste financier ? Le diagnostic financier d'une entreprise peut être rapproché du bilan de santé établi en médecine pour un être humain. Il permet d'identifier les symptômes et de mettre en œuvre une thérapeutique adaptée. Le diagnostic financier s'appuyant sur les performances de l'entreprise propose les mesures à prendre pour assurer sa survie, son redressement et son développement par une nouvelle stratégie.
+            </p>
+            
+            <p>
+                En définitive cette compétence est utile autant à l'actionnaire qui se préoccupe de la rentabilité des fonds investis et de l'indépendance de l'entreprise, qu'au banquier qui se préoccupe aussi de rentabilité (aptitude de l'entreprise à rémunérer les fonds empruntés) et de sécurité (aptitude de l'entreprise à rembourser ces mêmes fonds).
+            </p>
+            
+            <p>
+                L'analyste financier est un collaborateur indispensable dans les services comptables ou financiers, chez les opérateurs de services crédits chez les banquiers ou encore chez les équipes de contrôles de gestion. Il est en quelque sorte la vigie de l'entreprise ou du financeur.
+            </p>
+            
+            <p>
+                Comme pour toutes nos formations, le format pédagogique autorise de se former tout en poursuivant ses activités professionnelles ou autres, et est orienté vers l'acquisition de véritables compétences pour l'excellence par le savoir-faire.
+            </p>
+            
+            <p class="font-semibold">Docteur Annick ATSAIN</p>
+            <p>Directrice Général</p>
+            
+            <h1 class="text-[#686D76] text-xl md:text-2xl lg:text-3xl font-bold mt-8 mb-4">
+                Le Bachelor 3 FINANCE - Analyste financier
+            </h1>
+            
+            <p>
+                Ce Bachelor est dirigé par le Doyen honoraire Abdoulaye OUATTARA, Professeur à l'Université Félix Houphouët Boigny et grand spécialiste des sciences de gestion.
+            </p>
+            
+            <p>
+                Il a deux objectifs principaux. Le premier est de mettre l'apprenant en capacité d'élaborer et de mettre en œuvre une démarche de diagnostic économique et financier. Le second est de le rendre capable de rédiger un rapport de diagnostic complet et clair de la santé économique et financière d'une entreprise donnée.
+            </p>
+            
+            <p>
+                Aborder rationnellement le diagnostic financier suppose de répondre à un certain nombre de questions préalables concernant sa définition, ses finalités, ses outils et ses méthodes. Comme la plupart des disciplines scientifiques le diagnostic financier passera par une phase d'observation, puis de compréhension et enfin d'interprétation.
+            </p>
+            
+            <p>
+                Grâce à nos accords avec un grand nombre d'établissements d'enseignement supérieur en Europe comme sur le Continent Africain, nous mettons à disposition des salles de regroupement pour nos auditeurs dans un grand nombre de pays.
+            </p>
+            
+            <p>
+                Ce Bachelor de spécialisation ou de réorientation est directement accessible aux titulaires d'un Bac+2. La formation dure 9 mois au cours desquels vous alternerez les séances de travail individuel et les séminaires collectifs. En fonction de votre pays de résidence, CAF vous proposera plusieurs centres de séminaires (sous réserve d'un nombre suffisant d'admis ayant choisi ces centres et des places disponibles).
+            </p>
+            
+            <h1 class="text-[#686D76] text-xl md:text-2xl font-bold mt-8 mb-4">
+                Les modalités d'inscription
+            </h1>
+            
+            <p>
+                Pour vous inscrire, vous devez être titulaire au moins d'un Bac+2 (si ce n'est pas le cas, vous pouvez nous soumettre une demande de validation des acquis professionnels dite VAP).
+            </p>
+            
+            <p>Si vous êtes intéressé(e) cliquez sous « S'inscrire »</p>
+        </div>
+    </div>
 
-      </div>
-    <!-- ********FOOTER******* -->
-
-    <div class="conteneur">
-           <div class="row_contain">
-                <div class="row_6"><p>S'inscrire</p></div>
-                <div class="row_6"><p>Prochaine Rentrée </p></div>
-                <div class="row_6"><p>Limite candidatures</p></div>
-                <div class="row_5"><P><a href="inscription_finance">BACHELOR 3 FINANCE
-                                         Analyste Financier</a>
-                                    </P>
+    <!-- Footer Section -->
+    <div class="w-full lg:w-[86%] mx-auto px-4 lg:px-0 mb-8">
+        <div class="flex flex-col lg:flex-row gap-6">
+            
+            <!-- Registration Info Grid -->
+            <div class="flex-1">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+                    <!-- Headers -->
+                    <div class="border-4 border-[#f24c21] bg-transparent text-[#686D76] text-center py-3 px-2 rounded">
+                        <p class="font-semibold text-sm md:text-base">S'inscrire</p>
+                    </div>
+                    <div class="border-4 border-[#f24c21] bg-transparent text-[#686D76] text-center py-3 px-2 rounded">
+                        <p class="font-semibold text-sm md:text-base">Prochaine Rentrée</p>
+                    </div>
+                    <div class="border-4 border-[#f24c21] bg-transparent text-[#686D76] text-center py-3 px-2 rounded">
+                        <p class="font-semibold text-sm md:text-base">Limite candidatures</p>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="border-4 border-white bg-[#0c2b4e] text-white text-center py-3 px-2 rounded hover:text-[#686D76] transition-colors duration-500">
+                        <p class="text-sm md:text-base">
+                            <a href="inscription_finance">
+                                BACHELOR 3 FINANCE<br>
+                                Analyste Financier
+                            </a>
+                        </p>
+                    </div>
+                    <div class="border-4 border-[#f24c21] bg-transparent text-[#686D76] text-center py-3 px-2 rounded">
+                        <p class="text-sm md:text-base font-semibold">22 Avril 2026</p>
+                    </div>
+                    <div class="border-4 border-[#f24c21] bg-transparent text-[#686D76] text-center py-3 px-2 rounded">
+                        <p class="text-sm md:text-base font-semibold">20 Avril 2026</p>
+                    </div>
                 </div>
-                <div class="row_7"><p>22 Avril 2026</p></div>
-                 <div class="row_7"><p>20 Avril 2026</p></div>
-          </div>
-           <div class="social_contain">
-               <div class="social">
-                 <div class="wifi">
-                    <span style="color: #fff;">Nous contacter</span>
-                    <a href="#"><img class="w-[100px]" src="{{ asset('assets/upload/img/wifi.svg') }}" alt=""></a>
-                 </div>
-                 <div class="network">
-                    <span><a href=""><img class="w-[40px]" src="{{ asset('assets/upload/img/facebook.png') }}" alt=""></a></span>
-                    <br>
-                    <span><a href="#"><img class="w-[40px]" src="{{ asset('assets/upload/img/twitter.png') }}" alt=""></a></span>
             </div>
-         </div> 
-         </div>
-  </div>
+
+            <!-- Social Media Section -->
+            <div class="w-full lg:w-auto">
+                <div class="bg-[#f24c21] flex items-center gap-4 p-4 md:p-6 rounded-lg">
+                    <div class="text-center">
+                        <span class="text-white block mb-2 text-sm md:text-base">Nous contacter</span>
+                        <a href="#" class="block hover:opacity-80 transition-opacity">
+                            <img class="w-20 md:w-24 mx-auto" 
+                                 src="{{ asset('assets/upload/img/wifi.svg') }}" 
+                                 alt="Contact">
+                        </a>
+                    </div>
+                    
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="hover:scale-110 transition-transform">
+                            <img class="w-10 h-10" 
+                                 src="{{ asset('assets/upload/img/facebook.png') }}" 
+                                 alt="Facebook">
+                        </a>
+                        <a href="#" class="hover:scale-110 transition-transform">
+                            <img class="w-10 h-10" 
+                                 src="{{ asset('assets/upload/img/twitter.png') }}" 
+                                 alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 
 </section>
 
-<style>
-
-    /* ----main----- */
-    #main
-    {
-        display: flex;
-        width: 85%;
-        height: 220px;
-        margin-top: 20px;
-        margin-left: 100px;
-        background-color: #f24c21;
-    }
-    
-    .box_1
-    {
-        display: flex;
-        width: 500px;
-        height: 300px;
-        margin-left: 10px;
-        
-    }
-
-    .box_2
-    {
-        width: 80%;
-        height: 100%;
-       
-        padding-right: -180px;
-        margin-left: 10px;
-    }
-
-    .box_3
-    {
-        width: 250px;
-        height: 300px;
-        margin-top: 30px;
-        margin-right: 40px;
-       
-    }
-
-    .row_2
-    {
-        
-        justify-content: center;
-        align-items: center;
-        width: 230px;
-        padding: 5px;
-        margin: 15px;
-        border: 1px solid white;
-        color: white;
-        font-weight: 700;
-        background-color: transparent;
-    }
-
-    .row_2:hover
-    {
-        color: gray;
-        transition: ease 1.5s;
-    }
-
-    .row_3
-    {
-        
-        justify-content: center;
-        align-items: center;
-        width: 230px;
-        padding: 5px;
-        margin: 15px;
-        border: 1px solid #fff;
-        color: whitesmoke;
-        background-color: #2f353e;
-    }
-
-    .row_3:hover
-    {
-        color: gray;
-        transition: ease-in 0.5s;
-        
-    }
-
-    input
-   {
-    padding: 2px;
-    width: 150px;
-    border-radius: 5px;
-    }
-
-    .col-3
-    {
-    padding-right: 3px;
-    padding-left: 3px;
-   }
-.Bouton
-{
-
-    display: flex;
-    padding-top: 10px;
-    margin-top: 10px;
-    margin-left: px;
-    
-}
-
-button
-{
-    
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-}
-
-label
-{
-    display: block;
-    font-size: 15px;
-    padding: 5px;
-    color: #fff;
-}
-
-.espace_2
-{
-    margin-top: 10px;
-    color: black;
-    font-size: 20px;
-    font-family:'rubik' sans-serif ;
-}
-
-.white
-{
-    width: 160%;
-    color: #fff;
-    font-weight: 700;
-    padding-right: 90px;
-    font-size: 12px;
-}
-
-.white a:hover
-{
-    transition:ease-in 1s;
-    color: gray;
-}
-
-/* info-cadre */
-
-.row_4
-    {
-        width: 268px;
-        height: 50px;
-        padding-top: 15px;
-        margin-left: 3px;
-        margin-top: 10px;
-        text-align: center;
-        color: #fff;
-        font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        margin-right: 20px;
-        background-color: #2f353e;
-    }
-
-    .row_4 a
-    {
-        font-size: 0.9rem;
-    }
-
-    .row_4 a:hover
-    {
-        color: #f24c21;
-        transition: ease-in 0.5s;
-    }
-
-    .bg-row 
-    {
-        width: 100%;
-        margin-left: 10px;
-        display: flex;
-        justify-content: center;
-    }
-
-    /* -------grand cadre----- */
-
-    .cadre 
-{
-    margin-left: 90px;
-    height: 150%;
-    width: 86%;
-    margin-top: 15px;
-    margin-bottom: 0;
-    border: 4px solid #f24c21;
-    padding: 9px;
-}
-
-.cadre h1
-{
-
-    text-align: start;
-    font-size: 1.1rem;
-    font-family: arial, helvetica, sans-serif; 
-    font-weight: bolder;
-    font-size: x-large;
-    padding-right: 20px;
-}
-
-span
-{
-    font-style: medium;
-    font-size: 1rem;
-    font-family: arial, helvetica, sans-serif;
-    color: #686D76;
-}
-/* -------FOOTER------ */
-
-.conteneur
-{
-    margin-left: 90px;
-    display: flex;
-}
-.row_contain
-{
-     display: grid;
-     grid-template-columns: 240px 240px 240px;
-     margin-left: 5px;
-     margin-top: 20px;  
-}
-
-.row_5
-{
-        width: 200px;
-        height: 70px;
-        margin: 5px;
-        padding-top: 5px;
-        text-align: center;
-        border: 4px solid #fff;
-        color: #fff;
-        background-color: #0c2b4e;
-}
-
-.row_6
-{
-        width: 200px;
-        height: 50px;
-        margin: 5px;
-        padding-top: 5px;
-        text-align: center;
-        border: 4px solid #f24c21;
-        color: #686D76;
-        background-color: transparent;
-}
-
-.row_7
-{
-        width: 200px;
-        height: 70px;
-        margin: 5px;
-        padding-top: 5px;
-        text-align: center;
-        border: 4px solid #f24c21;
-        color: #686D76;
-        background-color: transparent;
-}
-
- .row_5 a:hover
-    {
-        color: #686D76;
-        transition: ease-in 0.5s;
-    }
-
-    .social_contain
-    {
-        padding-top: 10px;
-    }
-
-    .social
-    {
-        background-color: #f24c21;
-        display: flex;
-        padding: 10px;
-    }
-
-    .network
-    {
-        padding-top: 20px;
-        margin-left: 15px;
-    }
-
-
-</style>
+@endsection

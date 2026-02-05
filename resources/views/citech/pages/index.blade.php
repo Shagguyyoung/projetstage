@@ -3,370 +3,204 @@
 @section('title', 'Accueil')
 
 @section('content')
- <div class="wsmenucontainer" style="min-width: 430px;">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-12">
-                <img class="logo" src="{{ asset('assets/upload/img/logo-1-remove.png') }}" alt="">
+<div class="min-w-full lg:min-w-[430px]">
+    <div class="container mx-auto px-4">
+        <!-- Header avec logo et slogan -->
+        <div class="flex flex-col items-center text-center bg-[#f24c21] w-full lg:w-[88%] lg:mx-auto py-6 lg:py-8 rounded-t-lg">
+            <div class="w-full">
+                <img class="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full mx-auto" 
+                     src="{{ asset('assets/upload/img/logo-1-remove.png') }}" 
+                     alt="Logo CITech">
             </div>
-            <span class="slogan">
-                <i>Atteindre l'Excellence par le savoir-faire</i>
+            <span class="text-white text-lg md:text-xl lg:text-2xl font-serif italic mt-4 px-4">
+                Atteindre l'Excellence par le savoir-faire
             </span>
         </div>
-        <div class="marque">
+
+        <!-- Marquee -->
+        <div class="w-full lg:w-[88%] lg:mx-auto text-sm md:text-base text-gray-700 py-2">
             <marquee>
-            "Rentrées avril 2025 : EME Finance, EME Logistique, EME Data et EME Psychologie Sociale Appliquée"
-        </marquee>
+                "Rentrées avril 2025 : EME Finance, EME Logistique, EME Data et EME Psychologie Sociale Appliquée"
+            </marquee>
         </div>
         
-        <!-- ligne -->
-        <div class="ligne">
-          <div class="contain">
-            <div class="espace">
-                <b>Espace Auditeurs</b>
-            </div>
-            <div class="col-3">
-                <label for="name" id="name">Identifiant</label>
-                <input type="text" name="identifiant" id="" required>
-            </div>
-            <div class="col-3">
-                <label for="name" id="password">Mot de passe</label>
-                <input type="password" name="mot de passe" id="" required>
-            </div>
-            <div class="bouton">
-                <button type="submit">
-                  <img class="w-[39px]" src="{{ asset('assets/upload/img/btn.png') }}" alt="">
-                </button>
-            </div>
-          </div>
-        </div>
-    </div> <br>
-     
-
-    <!-- logo-connexion -->
-     <div class="col-5">
-        <div class="rond">
-            <div class="image">
-                <a href="ebe">
-                   <img src="{{ asset('assets/upload/img/ebe-1.jpeg') }}" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="rond">
-            <div class="image">
-                <a href="eme">
-                <img src="{{ asset('assets/upload/img/eme-1.jpeg') }}" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="rond">
-            <div class="image">
-                <a href="ede">
-                   <img src="{{ asset('assets/upload/img/ede-1.jpeg') }}" alt="">
-                </a>
+        <!-- Espace Auditeurs -->
+        <div class="w-full lg:w-[88%] lg:mx-auto border-t-2 border-b-2 border-[#f24c21] py-4">
+            <div class="flex flex-col md:flex-row items-center justify-around gap-4 px-4">
+                <div class="text-black text-xs md:text-sm font-bold">
+                    Espace Auditeurs
+                </div>
+                
+                <div class="w-full md:w-auto">
+                    <label for="identifiant" class="block text-xs text-[#f24c21] italic mb-1">
+                        Identifiant
+                    </label>
+                    <input type="text" 
+                           name="identifiant" 
+                           id="identifiant"
+                           class="border-2 border-[#f24c21] rounded px-2 py-1 w-full md:w-40"
+                           required>
+                </div>
+                
+                <div class="w-full md:w-auto">
+                    <label for="password" class="block text-xs text-[#f24c21] italic mb-1">
+                        Mot de passe
+                    </label>
+                    <input type="password" 
+                           name="mot_de_passe" 
+                           id="password"
+                           class="border-2 border-[#f24c21] rounded px-2 py-1 w-full md:w-40"
+                           required>
+                </div>
+                
+                <div class="mt-4 md:mt-6">
+                    <button type="submit" 
+                            class=" rounded-full p-2 hover:opacity-80 transition-opacity">
+                        <img class="w-8 h-8 md:w-10 md:h-10" 
+                             src="{{ asset('assets/upload/img/btn.png') }}" 
+                             alt="Connexion">
+                    </button>
+                </div>
             </div>
         </div>
-     </div>
-
-     <!-- cadre-texte -->
-      <div class="cadre" id="textBox">
-        <span>Le <strong>CAF Institute of Technology (CITech)</strong> a été créé pour être l’Université de Technologie propre à la Compagnie Académique de Formation (CAF), son pôle d’excellence.
-             Il a l’ambition d’être pour le continent africain l’équivalent du MIT américain.</span>
-             <br>
-             <br>
-             <span>Bâties sur un modèle pédagogique spécifique qui a prouvé depuis plus d’une décennie son efficacité et sa performance auprès des très grandes institutions universitaires françaises comme africaines, 
-                les formations et diplômes proposés par CITech ont pour objectifs principaux :</span>
-                <br>
-                <span>Faire atteindre à tous les apprenants,
-                     et non seulement à une partie d’entre eux, l’excellence dans les compétences visées.</span>
-                   <br>
-                   <span>Permettre à toutes et à tous, y compris ceux qui travaillent, 
-                    d’accéder à ce qui se fait de mieux dans la spécialité choisie et cela à toute période de leur vie.</span>
-                    <br>
-                    <span>Sortir de nos formations avec des savoir-faire opérationnels et de niveau international.</span>
-                    <br>
-                    <span>Avoir la capacité de matérialiser le savoir-faire acquis à travers la création de produits, de services et d’entreprises.</span>
-                    <br>
-                    <span>Pour réussir ce défi, nous sommes accompagnés par des équipes d’enseignants d’exception, 
-                        passionnés et reconnus internationalement parmi les meilleurs dans leurs spécialités.</span>
-                        <br>
-                        <br>
-                        <span>CITech vous propose trois niveaux de formation :</span>
-                        <ul>
-                            <li>Executive Bachelor of Engineering – EBE (*)</li>
-                            <li>Executive Master of Engineering - EME (**)</li>
-                            <li>Executive Doctorate of Engineering - EDE (**)</li>
-                            <br>
-                            <br>
-                            <li>(*) les titulaires d’un EBE ont accès aux EME </li>
-                            <li>(**) en double diplomation avec la Grande Ecole d’ingénieurs française ISAE-ISM Paris pour les filières Finance, Logistique et Data.</li>
-                        </ul>
-                        <br>
-                        <br>
-                        <span>Si vous recherchez l’Excellence, 
-                            tout en maintenant votre activité sans avoir à quitter votre lieu de résidence, vous êtes au bon endroit !</span>
-                            <br>
-                            <br>
-                            <span>Professeur Alain RIVIERE, Recteur de CITe</span>
-            
-      </div>
-      <button id="toggleBtn">Suite</button>
-      
-   
-      <!-- social -->
-       <p class="text-1">
-        <i>Nous contacter</i>
-       </p>
-
-      <div class="social-media">
-        <div class="social-logo"><img src="{{ asset('assets/upload/img/facebook.png') }}" alt=""></div>
-        <div class="social-logo"><img src="{{ asset('assets/upload/img/whatsapp.png') }}" alt=""></div>
-        <div class="social-logo"><img src="{{ asset('assets/upload/img/linkedin.png') }}" alt=""></div>
-      </div> 
     </div>
 
+    <!-- Logo connexion (EBE, EME, EDE) -->
+    <div class="flex flex-col md:flex-row items-center justify-around gap-6 md:gap-4 py-8 px-4">
+        <div class="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden cursor-pointer hover:scale-105 transition-transform">
+            <a href="ebe" class="block w-full h-full">
+                <img src="{{ asset('assets/upload/img/ebe-1.jpeg') }}" 
+                     alt="EBE"
+                     class="w-full h-full object-cover">
+            </a>
+        </div>
+        
+        <div class="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden cursor-pointer hover:scale-105 transition-transform">
+            <a href="eme" class="block w-full h-full">
+                <img src="{{ asset('assets/upload/img/eme-1.jpeg') }}" 
+                     alt="EME"
+                     class="w-full h-full object-cover">
+            </a>
+        </div>
+        
+        <div class="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden cursor-pointer hover:scale-105 transition-transform">
+            <a href="ede" class="block w-full h-full">
+                <img src="{{ asset('assets/upload/img/ede-1.jpeg') }}" 
+                     alt="EDE"
+                     class="w-full h-full object-cover">
+            </a>
+        </div>
+    </div>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    <!-- Cadre texte -->
+    <div class="w-full lg:w-[85%] lg:mx-auto px-4">
+        <div id="textBox" 
+             class="border-4 border-[#f24c21] p-4 md:p-6 lg:p-8 text-[#686D76] text-xs md:text-sm overflow-hidden transition-all duration-400 max-h-16 md:max-h-20">
+            <p class="mb-4">
+                Le <strong>CAF Institute of Technology (CITech)</strong> a été créé pour être l'Université de Technologie propre à la Compagnie Académique de Formation (CAF), son pôle d'excellence.
+                Il a l'ambition d'être pour le continent africain l'équivalent du MIT américain.
+            </p>
+            
+            <p class="mb-4">
+                Bâties sur un modèle pédagogique spécifique qui a prouvé depuis plus d'une décennie son efficacité et sa performance auprès des très grandes institutions universitaires françaises comme africaines, 
+                les formations et diplômes proposés par CITech ont pour objectifs principaux :
+            </p>
+            
+            <p class="mb-2">
+                Faire atteindre à tous les apprenants, et non seulement à une partie d'entre eux, l'excellence dans les compétences visées.
+            </p>
+            
+            <p class="mb-2">
+                Permettre à toutes et à tous, y compris ceux qui travaillent, d'accéder à ce qui se fait de mieux dans la spécialité choisie et cela à toute période de leur vie.
+            </p>
+            
+            <p class="mb-2">
+                Sortir de nos formations avec des savoir-faire opérationnels et de niveau international.
+            </p>
+            
+            <p class="mb-2">
+                Avoir la capacité de matérialiser le savoir-faire acquis à travers la création de produits, de services et d'entreprises.
+            </p>
+            
+            <p class="mb-4">
+                Pour réussir ce défi, nous sommes accompagnés par des équipes d'enseignants d'exception, passionnés et reconnus internationalement parmi les meilleurs dans leurs spécialités.
+            </p>
+            
+            <p class="mb-2">CITech vous propose trois niveaux de formation :</p>
+            
+            <ul class="list-disc list-inside space-y-1 mb-4 ml-4">
+                <li>Executive Bachelor of Engineering – EBE (*)</li>
+                <li>Executive Master of Engineering - EME (**)</li>
+                <li>Executive Doctorate of Engineering - EDE (**)</li>
+            </ul>
+            
+            <ul class="list-none space-y-1 mb-4 ml-4">
+                <li>(*) les titulaires d'un EBE ont accès aux EME</li>
+                <li>(**) en double diplomation avec la Grande Ecole d'ingénieurs française ISAE-ISM Paris pour les filières Finance, Logistique et Data.</li>
+            </ul>
+            
+            <p class="mb-4">
+                Si vous recherchez l'Excellence, tout en maintenant votre activité sans avoir à quitter votre lieu de résidence, vous êtes au bon endroit !
+            </p>
+            
+            <p class="font-semibold">Professeur Alain RIVIERE, Recteur de CITech</p>
+        </div>
+        
+        <button id="toggleBtn" 
+                class="mt-2 px-4 py-2 bg-transparent text-[#686D76] hover:bg-[#2980b9] hover:text-white transition-colors rounded cursor-pointer border-none">
+            Suite
+        </button>
+    </div>
 
+    <!-- Social Media -->
+    <div class="mt-8 mb-6">
+        <p class="text-center text-[#f24c21] text-base md:text-lg italic mb-4">
+            Nous contacter
+        </p>
 
-*
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.row
-{
-    display: flex;
-    background: #f24c21;
-    width: 88%;
-    height: 230px;
-    padding-bottom: 25px;
-    margin-left: 95px;
-    flex-direction: column;
-    
-}
-.hidden
-{
-    display: none;
-}
+        <div class="flex justify-around items-center px-4 md:px-8 max-w-md mx-auto">
+            <div class="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden cursor-pointer hover:scale-110 transition-transform">
+                <img src="{{ asset('assets/upload/img/facebook.png') }}" 
+                     alt="Facebook"
+                     class="w-full h-full object-cover">
+            </div>
+            
+            <div class="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden cursor-pointer hover:scale-110 transition-transform">
+                <img src="{{ asset('assets/upload/img/whatsapp.png') }}" 
+                     alt="WhatsApp"
+                     class="w-full h-full object-cover">
+            </div>
+            
+            <div class="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden cursor-pointer hover:scale-110 transition-transform">
+                <img src="{{ asset('assets/upload/img/linkedin.png') }}" 
+                     alt="LinkedIn"
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+</div>
 
-.container
-{
-   justify-content: center;
-   align-items: center;
-    
-
-}
-.col-md-12
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    ;
-}
-
-.logo
-{
-    width: 190px;
-    height:190px;
-    border-radius: 50%
-}
-.slogan
-{
-    font-size: 25px;
-    color: #fff;
-    
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    align-items: center;
-}
-
-.marque
-{
-    width: 88%;
-    margin-left: 100px;
-    color: rgb(71, 71, 68);
-    font-size: 15px;
-}
-
-.ligne
-{
-    display: inline-block;
-    border-bottom: #f24c21 1.5px solid;
-    padding-bottom: 2px;
-    border-top: 1.5px solid #f24c21;
-    width: 88%;
-    margin-left: 90px;
-}
-.espace
-{
-    
-    color: black;
-    font-size: 10px;
-    padding-left: 2px;
-}
-.contain
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-label
-{
-    display: block;
-    font-size: 10px;
-    padding: 5px;
-    font-style: italic;
-    color: #f24c21;
-}
-
-input
-{
-    border: 2px solid #f24c21;
-}
-
-.col-3
-{
-    margin-right: -190px;
-    padding-left: px;
-}
-.bouton
-{
-    padding-right: 3px;
-    padding-left: 3px;
-    margin-top: 25px;
-    position: relative;
-}
-
-button
-{
-    cursor: pointer;
-    border: none;
-    background-color: black;
-    border-radius: 50%;
-}
-
-/* -------logo-connexion----- */
-.col-5
-{
-   
-    display: flex;
-    padding: 5px;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: wrap;
-
-}
-.rond
-{
-    
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-/* ----cadre-texte------ */
-
-/* .cadre */
-/* { */
-    /* margin-left: 95px; */
-    /* margin-right: 0px;
-    height: 60%;
-    width: 83%;
-    margin-top: 15px;
-    margin-bottom: 0;
-    border: 3px solid #f24c21;
-    padding: 90px; */
-/* } */
-.cadre
-{
-  width: 85%;
-  max-height: 60px;
-  margin-left: 95px;
-  color: #686D76;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  border: 3px solid #f24c21;
-  padding: 10px;
-}
-
-#toggleBtn {
-  
-  margin-left: 950px;
-  margin-top: 8px;
-  padding: 6px 12px;
-  background-color: transparent;
-  color: #686D76;
-  border: none;
-  cursor: pointer;
-}
-
-#toggleBtn:hover {
-  background: #2980b9;
-}
-
-/* -----social----- */
-.text-1
-{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 1rem;
-    font-family:   Arial, Helvetica, sans-serif;
-    color: #f24c21;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.social-media
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-}
-
-.social-logo
-{
-    width: 60px;
-    height: 60px;
-    border-radius: 60%;
-    padding: 5px
-   
-}
-
-@media only screen and (max-width: 600) {
-    .logo{
-        width: 100px;
-    }
-    .slogan{
-        font-size: 16px;
-    }
-}
-</style> 
-
-
-<!-- ******JAVASCRIPT****** -->
 <script>
     const textBox = document.getElementById("textBox");
     const button = document.getElementById("toggleBtn");
 
-button.addEventListener("click", () => {
-  if (textBox.classList.contains("open")) {
-    textBox.style.maxHeight = "60px";      // refermer
-    button.textContent = "Suite";          // changer texte du bouton
-  } else {
-    textBox.style.maxHeight = textBox.scrollHeight + "px"; // agrandir
-    button.textContent = "Lire moins";     // changer texte du bouton
-  }
-  
-  textBox.classList.toggle("open");
-});
+    button.addEventListener("click", () => {
+        if (textBox.classList.contains("open")) {
+            textBox.style.maxHeight = window.innerWidth < 768 ? "80px" : "60px";
+            button.textContent = "Suite";
+        } else {
+            textBox.style.maxHeight = textBox.scrollHeight + "px";
+            button.textContent = "Lire moins";
+        }
+        
+        textBox.classList.toggle("open");
+    });
 
+    // Ajuster la hauteur initiale en fonction de la taille d'écran
+    window.addEventListener('resize', () => {
+        if (!textBox.classList.contains("open")) {
+            textBox.style.maxHeight = window.innerWidth < 768 ? "80px" : "60px";
+        }
+    });
 </script>
 @endsection
